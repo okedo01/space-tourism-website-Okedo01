@@ -12,6 +12,6 @@ body {
     background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
 }
 
-.space-container img {
-     
+.nav-links {
+    background-color: red; 
 }
