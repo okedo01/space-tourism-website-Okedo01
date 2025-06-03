@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    background-image: url(./starter-code/assets/home/background-home-desktop.jpg);
+}
+
+.space-container img {
+     
+}
