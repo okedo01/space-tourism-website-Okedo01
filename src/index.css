@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 32rem;
+    width: 100%;
+    margin-top: 30px;
+    padding: 15px 40PX;
+    background-color: gray;
+}
+.nav-links a {
+    text-decoration: none;
+}
