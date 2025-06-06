@@ -9,10 +9,10 @@ const Navbar = () => {
         <div className="wrapper">
             <img src={logoIMG} alt="logo.svg" />
             <div className="nav-links">
-                <Link to="/">Home</Link>
-                <Link to="/destination">Destination</Link>
-                <Link to="/crew">Crew</Link>
-                <Link to="/technology">Technology</Link>
+                <Link to="/"><span>00</span>Home</Link>
+                <Link to="/destination"><span>01</span>Destination</Link>
+                <Link to="/crew"><span>02</span>Crew</Link>
+                <Link to="/technology"><span>03</span>Technology</Link>
             </div>
         </div>
      );

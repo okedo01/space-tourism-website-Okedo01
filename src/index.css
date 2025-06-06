@@ -1,12 +1,28 @@
 .wrapper {
     display: flex;
-    justify-content: flex-end;
-    width: 32rem;
-    width: 100%;
-    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
     padding: 15px 40PX;
+}
+.wrapper img {
+    width: 2%;
+}
+.wrapper .nav-links {
+    display: flex;
+    gap: 40px;
+    padding: 15px 40px;
     background-color: gray;
 }
 .nav-links a {
+    color: white;
     text-decoration: none;
+}
+.nav-links a:active {
+    border-bottom: 2px solid black;
+    color: white;
+    text-decoration: none;
+}
+.nav-links span {
+    padding-right: 5px;
 }
