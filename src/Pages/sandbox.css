@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 80px;
+    margin: 10em auto;
+    background-color: green;
+}
+
+.space-info {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: red;
+}
+
+.explore {
+    width: 50%;
+    padding: 80px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}

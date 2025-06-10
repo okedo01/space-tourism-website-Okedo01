@@ -18,10 +18,11 @@
     color: white;
     text-decoration: none;
 }
-.nav-links a:active {
-    border-bottom: 2px solid black;
+.nav-links a:hover {
+    border-bottom: 2px solid rgb(199, 190, 190);
     color: white;
     text-decoration: none;
+    cursor: pointer;
 }
 .nav-links span {
     padding-right: 5px;

@@ -5,12 +5,14 @@ import "../src/App.css"
 // import Destination from "./Pages/Destination"
 // import Technology from "./Pages/Technology"
 import Navbar from "./Navbar"
+import Home from "./Pages/Home"
 
 function App() {
 
   return (
     <div className="space-container">
       <Navbar />
+      <Home />
       {/* <Routes>
         <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
