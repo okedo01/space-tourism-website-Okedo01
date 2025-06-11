@@ -1,18 +1,21 @@
 import { Link } from "react-router-dom";
-// import logoIMG from "./starter-code/assets/shared/logo.svg"
+import data from "../starter-code/data.json"
+import logoIMG from "../starter-code/assets/shared/logo.svg"
 
 const Navbar = () => {
     return ( 
         <div className="wrapper">
-            <h1>Hello</h1>
+            <img src={logoIMG} alt="" />
             <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                    <Link to="/dest">Destination</Link>
-                    <Link to="/crew">Crew</Link>
-                    <Link to="/tech">Technology</Link>
+                <li className="links">
+                    <Link to="/">00 Home</Link>
+                    <Link to="/dest">01 Destination</Link>
+                    <Link to="/crew">02 Crew</Link>
+                    <Link to="/tech">03 Technology</Link>
                 </li>
             </ul>
+            { console.log(data)
+            }
         </div>
      );
 }
