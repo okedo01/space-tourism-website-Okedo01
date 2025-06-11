@@ -1,12 +1,9 @@
-import crewBg from "../starter-code/assets/crew/background-crew-desktop.jpg"
-import "./sandbox.css"
+import React from 'react'
 
 const Crew = () => {
-    return ( 
-        <div className="crew">
-            <img src={crewBg} alt="" />
-        </div>
-     );
+  return (
+    <div>Crew</div>
+  )
 }
- 
-export default Crew;
+
+export default Crew
