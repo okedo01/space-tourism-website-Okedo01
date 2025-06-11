@@ -1,4 +1,4 @@
-import "./sandbox.css"
+// import ".."
 
 const Preview = () => {
     return ( 

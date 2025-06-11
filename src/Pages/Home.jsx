@@ -4,7 +4,8 @@ import "./sandbox.css"
 const Home = () => {
     return ( 
         <div>
-            <Preview />
+            {/* <Preview /> */}
+            <h1>Home</h1>
         </div>
      );
 }
