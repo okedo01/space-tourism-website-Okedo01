@@ -7,7 +7,10 @@ const Navbar = () => {
             <h1>Hello</h1>
             <ul>
                 <li>
-                    <Link to="#">Home</Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/dest">Destination</Link>
+                    <Link to="/crew">Crew</Link>
+                    <Link to="/tech">Technology</Link>
                 </li>
             </ul>
         </div>
