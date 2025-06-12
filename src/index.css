@@ -1,28 +1,31 @@
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    padding: 15px 40PX;
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url("./starter-code//assets/home/background-home-desktop.jpg");
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.wrapper img {
-    width: 2%;
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
 }
-.wrapper .nav-links {
-    display: flex;
-    gap: 40px;
-    padding: 15px 40px;
+a:hover {
+  color: #535bf2;
 }
-.nav-links a {
-    color: white;
-    text-decoration: none;
-}
-.nav-links a:hover {
-    border-bottom: 2px solid rgb(199, 190, 190);
-    color: white;
-    text-decoration: none;
-    cursor: pointer;
-}
-.nav-links span {
-    padding-right: 5px;
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
 }
