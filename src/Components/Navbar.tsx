@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "./sandbox.css"
 
 const Navbar: React.FC = () => {
   return (
     <div>
       <nav>
         <Link to="/">
-          <img src="./" alt="logo" />
+          <img src="./logo.svg" alt="logo" />
         </Link>
         <div className="nav-links">
           <Link to="/">
