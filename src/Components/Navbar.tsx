@@ -1,25 +1,38 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./sandbox.css"
 
 const Navbar: React.FC = () => {
   return (
     <div>
-      <nav>
-        <Link to="/">
+      <nav style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        position: "fixed",
+        top: "25px",
+        right: 0,
+        margin: "auto 20px",
+        width: "100%"
+      }}>
+        <Link to="/" style={{marginLeft: "50px"}}>
           <img src="./logo.svg" alt="logo" />
         </Link>
-        <div className="nav-links">
-          <Link to="/">
+        <div style={{
+          background: "gray",
+          display: "flex",
+          gap: "0 20px",
+          padding: "5px 20px"
+        }}>
+          <Link to="/" style={{textDecoration: "none"}}>
             Home
           </Link>
-          <Link to="/crew">
+          <Link to="/crew" style={{textDecoration: "none"}}>
             Crew
           </Link>
-          <Link to="/dest">
+          <Link to="/dest" style={{textDecoration: "none"}}>
             Destionation
           </Link>
-          <Link to="/tech">
+          <Link to="/tech" style={{textDecoration: "none"}}>
             Technology
           </Link>
         </div>
