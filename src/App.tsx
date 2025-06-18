@@ -10,7 +10,7 @@ import NotFound from './Components/NotFound'
 function App() {
 
   return (
-    <div className="wrapper">
+    <div style={{marginTop: "15em"}}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
