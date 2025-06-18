@@ -3,6 +3,9 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Crew from './Pages/Crew'
+import Destination from './Pages/Destination'
+import Technology from './Pages/Technology'
+import NotFound from './Components/NotFound'
 
 function App() {
 
@@ -12,7 +15,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/crew" element={<Crew />} />
-        <Route path="/" element={<Home />} />
+        <Route path="/dest" element={<Destination />} />
+        <Route path="/tech" element={<Technology />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   )

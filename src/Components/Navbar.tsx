@@ -8,6 +8,20 @@ const Navbar: React.FC = () => {
         <Link to="/">
           <img src="./" alt="logo" />
         </Link>
+        <div className="nav-links">
+          <Link to="/">
+            Home
+          </Link>
+          <Link to="/crew">
+            Crew
+          </Link>
+          <Link to="/dest">
+            Destionation
+          </Link>
+          <Link to="/tech">
+            Technology
+          </Link>
+        </div>
       </nav>
     </div>
   )
