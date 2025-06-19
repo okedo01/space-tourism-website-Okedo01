@@ -8,7 +8,7 @@ const Home: React.FC = () => {
       justifyContent: "space-between",
       alignItems: "cnter",
       marginTop: "30px",
-      height: "473px"
+      height: "473px",
       }}>
       <div style={{
         textAlign: "start",

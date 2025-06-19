@@ -2,6 +2,7 @@ import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from './Components/Navbar'
 import "../src/Components/layout.css"
+import HomeImg from "./Components/assets/shared/logo.svg"
 
 const Layout: React.FC = () => {
     const location = useLocation();
@@ -9,9 +10,9 @@ const Layout: React.FC = () => {
     const getBackgroundColor = () => {
         switch (location.pathname) {
         case "/":
-            return "red"; 
+            return HomeImg; 
         case "/crew":
-            // return "url('../assets/destination/background-destination-desktop.jpg')"; 
+            return "green"; 
         case "/dest":
             return "blue"; 
         case "/tech":
