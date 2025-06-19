@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ImgLogo from "./assets/shared/logo.svg"
 
 const Navbar: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const Navbar: React.FC = () => {
         width: "100%"
       }}>
         <Link to="/" style={{marginLeft: "50px"}}>
-          <img src="./logo.svg" alt="logo" />
+          <img src={ImgLogo} alt="logo" />
         </Link>
         <div style={{
           background: "gray",
