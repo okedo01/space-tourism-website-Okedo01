@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         justifyContent: "space-between",
         alignItems: "center",
         position: "fixed",
-        top: "25px",
+        top: "0",
         right: 0,
         margin: "auto 20px",
         width: "100%"

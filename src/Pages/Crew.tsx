@@ -7,7 +7,7 @@ const Crew: React.FC = () => {
       <div>
         <div style={{
           display: "flex",
-          background: "red"
+          height: "426px"
         }}>
           <h4>FLIGHT ENGINEER <span>ANOUSHEH ANSARI</span></h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis labore ut dicta esse minus optio ratione voluptates eaque similique.</p>

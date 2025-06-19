@@ -9,21 +9,21 @@ const Layout: React.FC = () => {
     const getBackgroundColor = () => {
         switch (location.pathname) {
         case "/":
-            return "#f2f2f2"; 
+            return "red"; 
         case "/crew":
-            return "#dff6ff"; 
+            // return "url('../assets/destination/background-destination-desktop.jpg')"; 
         case "/dest":
-            return "#dff6ff"; 
+            return "blue"; 
         case "/tech":
-            return "#dff6ff"; 
+            return "yellow"; 
         default:
-            return "#f2f2f2";
+            return "black";
         }
     }
   return (
     <div>
         
-        <div className="layout" style={{ backgroundColor: getBackgroundColor(), minHeight: "100vh" }}>
+        <div className="layout" style={{ backgroundColor: getBackgroundColor(), backgroundImage: getBackgroundColor()}}>
             <Navbar />
             <Outlet />
         </div>

@@ -10,11 +10,7 @@ import Layout from './Layout'
 function App() {
 
   return (
-    <div style={{margin: 0,
-      padding: 0,
-      listStyleType: "none",
-      boxSizing: "border-box"
-    }}>
+    <div>
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
