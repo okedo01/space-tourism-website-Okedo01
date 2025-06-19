@@ -4,7 +4,7 @@ import ImgLogo from "./assets/shared/logo.svg"
 
 const Navbar: React.FC = () => {
   return (
-    <div>
+    <div style={{background: "red"}}>
       <nav style={{
         display: "flex",
         justifyContent: "space-between",

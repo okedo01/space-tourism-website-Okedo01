@@ -1,6 +1,6 @@
 import React from 'react'
-import Sidebar from './Sidebar/Sidebar'
 import Logo from "./destination/image-mars.png"
+import Sidebar from './Sidebar/Sidebar'
 
 const Destination: React.FC = () => {
   return (
