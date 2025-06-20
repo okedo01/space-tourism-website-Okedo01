@@ -1,4 +1,4 @@
-const tourism: Tourism = {
+{
   "destinations": [
     {
       "name": "Moon",

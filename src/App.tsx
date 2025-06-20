@@ -5,7 +5,7 @@ import Home from './Pages/Home'
 import Crew from './Pages/Crew'
 import Technology from './Pages/Technology'
 import NotFound from './Components/NotFound'
-import Destination from './Pages/Destination/Destination'
+import Destination from './Pages/Destination'
 
 function App() {
 
