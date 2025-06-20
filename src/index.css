@@ -101,14 +101,15 @@ button:focus-visible {
   margin-right: 24em;
   margin-left: 3em;
   text-align: start;
+  color: rgb(235, 229, 229);
 }
 .home .explore {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: white;
   width: 9em;
   height: 9em;
+  background: white;
   font-size: 24px;
   font-weight: bolder;
   border-radius: 50%;
