@@ -1,10 +1,10 @@
 export interface Tourism {
-    destinations: Destination[]
+    destinations: DestinationData[]
     crew: Crew[]
     technology: Technology[]
 }
 
-export interface Destination {
+export interface DestinationData {
     name: string
     images: Images
     description: string
