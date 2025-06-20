@@ -59,14 +59,31 @@ button:focus-visible {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 0;
   margin: auto 20px;
   width: 100%;
 }
 .nav-bar .nav-links {
-  padding: 10px 20px;
-  background-color: gray;
+  display: flex;
+  gap: 0 15px;
+  justify-content: space-between;
+  padding: 10px 25px;
+  background-color: rgb(255, 255, 255, 0.5);
+  transform: translateX(-10%);
+}
+.nav-links a {
+  color: white;
+}
+.nav-links a:hover {
+  color: rgba(249, 249, 249, 0.5);
+}
+.nav-links a h4{
+  font-weight: 300;
+}
+.nav-links a h4 span{
+  margin-right: 3px;
+  font-weight: 900;
 }
 
 .home {
@@ -78,6 +95,7 @@ button:focus-visible {
   background-image: url(../src/assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 200px;
 }
 .home .space {
   margin-right: 24em;
