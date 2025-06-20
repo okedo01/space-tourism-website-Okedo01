@@ -1,37 +1,14 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
-import ImgLogo from "../Components/assets/shared/logo.svg"
-import CrewImg from '../Pages/Destination/image-mars.png'
+import { Link } from 'react-router-dom'
+import Logo from "../assets/shared/logo.svg"
 
 const Navbar: React.FC = () => {
-   const location = useLocation();
-
-  const getImage = () => {
-    switch (location.pathname) {
-      case '/':
-        return ImgLogo;
-      case '/crew':
-        return CrewImg;
-      default:
-        return ImgLogo;
-    }
-  };
 
   return (
-    <div style={{background: "red"}}>
-      <nav style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-        position: "fixed",
-        top: "0",
-        right: 0,
-        margin: "auto 20px",
-        width: "100%"
-      }}>
-        <img src={getImage()} alt="Route specific" className="navbar-image" />
+    <div>
+      <nav className='nav-bar'>
         <Link to="/" style={{marginLeft: "50px"}}>
-          <img src={ImgLogo} alt="logo" />
+          <img src={Logo} alt="" />
         </Link>
         <div style={{
           background: "gray",
