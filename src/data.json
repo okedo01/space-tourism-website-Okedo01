@@ -1,4 +1,4 @@
-export const tourism: Tourism = {
+const tourism: Tourism = {
   "destinations": [
     {
       "name": "Moon",

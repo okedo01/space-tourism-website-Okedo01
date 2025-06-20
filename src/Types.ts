@@ -1,36 +1,36 @@
-interface Tourism {
-    destination: []
-    crew: []
-    technology: []
+export interface Tourism {
+    destinations: Destination[]
+    crew: Crew[]
+    technology: Technology[]
 }
 
-interface destination {
+export interface Destination {
     name: string
-    images: {}
+    images: Images
     description: string
     distance: string
     travel: string
 }
 
-interface images {
+export interface Images {
     png: string
     webp: string
 }
 
-interface crew {
+export interface Crew {
     name: string
-    images: {}
+    images: Images
     role: string
     bio: string
 }
 
-interface technology {
+export interface Technology {
     name: string
-    TechImages: {}
+    images: TechImages
     description: string
 }
 
-interface TechImages {
+export interface TechImages {
     portrait: string
     landscape: string
 }
