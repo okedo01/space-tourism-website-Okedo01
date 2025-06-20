@@ -10,12 +10,7 @@ const Navbar: React.FC = () => {
         <Link to="/" style={{marginLeft: "50px"}}>
           <img src={Logo} alt="" />
         </Link>
-        <div style={{
-          background: "gray",
-          display: "flex",
-          gap: "0 20px",
-          padding: "5px 20px"
-        }}>
+        <div className="nav-links">
           <Link to="/" style={{textDecoration: "none"}}>
             Home
           </Link>
