@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import type { DestinationData, Tourism } from "../Types"
+import { Link } from 'react-router-dom'
 
 const Destination: React.FC = () => {
   const [ planets, setPlanets ] = useState<DestinationData[]>([])
@@ -20,7 +21,16 @@ const Destination: React.FC = () => {
 
   return (
     <div className="destination">
-      <p>{planets}</p>
+      <h1><span>01</span>PICK YOUR DESTINATION</h1>
+      <ul>
+        { planets.map((planet, index) => (
+          <li key={index}>
+            <Link to="/destination">
+              <p>{planet.name}</p>
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
