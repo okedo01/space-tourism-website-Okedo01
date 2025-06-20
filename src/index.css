@@ -106,13 +106,16 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: gray;
-  width: 6em;
-  height: 6em;
-  font-size: 32px;
+  background: white;
+  width: 9em;
+  height: 9em;
+  font-size: 24px;
   font-weight: bolder;
   border-radius: 50%;
   text-align: center;
+}
+.home .explore a {
+  color: gray;
 }
 
 @media (prefers-color-scheme: light) {
