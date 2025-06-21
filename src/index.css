@@ -139,6 +139,9 @@ button:focus-visible {
   color: gray;
   font-weight: 900;
 }
+.destination .planet-details {
+  background-color: white;
+}
 
 @media (prefers-color-scheme: light) {
   :root {

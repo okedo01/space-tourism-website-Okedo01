@@ -29,9 +29,16 @@ const Destination: React.FC = () => {
           </button>
         ))}
       </ul>
-      <div className="planet-details">
-        <article>{selectedPlanet.description}</article>
-      </div>
+      { selectedPlanet && (
+        <div className="planet-details">
+          <img src={selectedPlanet.images.png} alt="image" />
+          <article>
+            <p>{selectedPlanet.description}</p>
+            <span>{selectedPlanet.distance}</span>
+            <span>{selectedPlanet.travel}</span>
+          </article>
+        </div>
+      )}
     </div>
   )
 }
