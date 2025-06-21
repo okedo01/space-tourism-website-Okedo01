@@ -15,10 +15,10 @@ const Navbar: React.FC = () => {
            <h4><span>01</span>HOME</h4>
           </Link>
           <Link to="/dest" style={{textDecoration: "none"}}>
-            <h4><span>03</span>DESTINATION</h4>
+            <h4><span>02</span>DESTINATION</h4>
           </Link>
           <Link to="/crew" style={{textDecoration: "none"}}>
-            <h4><span>02</span>CREW</h4>
+            <h4><span>03</span>CREW</h4>
           </Link>
           <Link to="/tech" style={{textDecoration: "none"}}>
             <h4><span>04</span>TECHNOLOGY</h4>
