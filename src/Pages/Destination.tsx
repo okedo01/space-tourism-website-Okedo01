@@ -31,7 +31,7 @@ const Destination: React.FC = () => {
       <main>
         <ul>
           { planets.map((planet, index) => (
-            <button key={index} onClick={() => setSelectedIndex(index)}>
+            <button key={index} onClick={() => setSelectedIndex(index)} style={{ borderBottom: selectedIndex === index ? '1px solid white' : '1px solid transparent'}}>
               { planet.name }
             </button>
           ))}
@@ -41,8 +41,10 @@ const Destination: React.FC = () => {
             <article>
               <h2> { selectedPlanet.name } </h2>
               <p>{selectedPlanet.description}</p>
-              <span>{selectedPlanet.distance}</span>
-              <span>{selectedPlanet.travel}</span>
+              <div className="info">
+                <p>AVG. DISTANCE <span>{selectedPlanet.distance}</span></p>
+                <p>EST. TRAVEL TIME <span>{selectedPlanet.travel}</span></p>
+              </div>
             </article>
           </section>
         )}

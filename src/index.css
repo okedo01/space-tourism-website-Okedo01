@@ -50,10 +50,10 @@ button {
 button:hover {
   border-color: #646cff;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 .nav-bar {
   display: flex;
@@ -148,11 +148,20 @@ button:focus-visible {
 }
 .destination main {
   margin: auto 10em;
-  background-color: red;
 }
 .destination ul button {
-  background-color: rgba(255, 255, 255, 0.5);
+  /* border-bottom-color: white; */
+  border: none;
+  background-color: transparent;
+  color: white;
 }
+/* button:focus,
+button:focus-visible {
+  border-bottom: 1px solid white;
+}  */
+  button:active {
+    border-bottom: 1px solid white;
+  }
 .destination .planet-details{
   display: flex;
   flex-direction: column;
@@ -162,11 +171,21 @@ button:focus-visible {
   width: 100%;
 }
 .destination .planet-details article {
-  padding: 20px 10px;
+  padding: 10px;
 }
 .destination .planet-details article h2{
   display: flex;
   justify-content: center;
+  color: white;
+  font-size: 52px;
+}
+.destination .planet-details .info {
+  border-top: 1px solid gray;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.destination .planet-details .info span{
+  display: block;
 }
 
 @media (prefers-color-scheme: light) {
