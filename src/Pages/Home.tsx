@@ -11,7 +11,7 @@ const Home: React.FC = () => {
           because we’ll give you a truly out of this world experience!</p>
       </article>
       <button className="explore">
-        <Link to="destination">EXPLORE</Link>
+        <Link to="/destination">EXPLORE</Link>
       </button>
     </div>
   )

@@ -40,7 +40,7 @@ const Destination: React.FC = () => {
           <section className="planet-details">
             <article>
               <h2> { selectedPlanet.name } </h2>
-              <p>{selectedPlanet.description}</p>
+              <p style={{color: "gray", fontSize: "14px"}}>{selectedPlanet.description}</p>
               <div className="info">
                 <p>AVG. DISTANCE <span>{selectedPlanet.distance}</span></p>
                 <p>EST. TRAVEL TIME <span>{selectedPlanet.travel}</span></p>
