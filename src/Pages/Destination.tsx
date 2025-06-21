@@ -22,6 +22,7 @@ const Destination: React.FC = () => {
 
   return (
     <div className="destination">
+      <h2><span>02</span>PICK YOUR DESTINATION</h2>
       <ul>
         { planets.map((planet, index) => (
           <button key={index} onClick={() => setSelectedIndex(index)}>
