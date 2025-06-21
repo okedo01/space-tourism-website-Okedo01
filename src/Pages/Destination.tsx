@@ -30,7 +30,7 @@ const Destination: React.FC = () => {
         ))}
       </ul>
       <div className="planet-details">
-        
+        <article>{selectedPlanet.description}</article>
       </div>
     </div>
   )
