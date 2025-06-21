@@ -18,16 +18,23 @@ const Crew: React.FC = () => {
       .catch(error => console.log(error.message));
   }, [])
 
-  const selectedCrew = crewValues[selectedIndex]
+  const selectedCrew = crewValues[selectedIndex];
+
   return (
     <div className='crew'>
       <h1><span>01</span>MEET YOUR CREW</h1>
       { crewValues.map((value, index) => (
         <li key={index}>
-          {/* <p> { value.name } </p> */}
           <p> { value.name } </p>
+          <div className="crew-details">
+            <span>{ value.bio }</span>
+            <h2>{ value.name }</h2>
+            <p>{ value.role }</p>
+          </div>
         </li>
       ))}
+      <img src={selectedCrew.images.png} alt="crew-img" />
+      <button className="selected-crew"></button>
     </div>
   )
 }
