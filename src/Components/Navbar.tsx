@@ -12,16 +12,16 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="nav-links">
           <Link to="/" style={{textDecoration: "none"}}>
-           <h4><span>01</span>HOME</h4>
+           <h4><span>00</span>HOME</h4>
           </Link>
           <Link to="/destination" style={{textDecoration: "none"}}>
-            <h4><span>02</span>DESTINATION</h4>
+            <h4><span>01</span>DESTINATION</h4>
           </Link>
           <Link to="/crew" style={{textDecoration: "none"}}>
-            <h4><span>03</span>CREW</h4>
+            <h4><span>02</span>CREW</h4>
           </Link>
           <Link to="/technology" style={{textDecoration: "none"}}>
-            <h4><span>04</span>TECHNOLOGY</h4>
+            <h4><span>03</span>TECHNOLOGY</h4>
           </Link>
         </div>
       </nav>

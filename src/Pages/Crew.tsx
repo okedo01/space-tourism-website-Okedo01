@@ -1,19 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import type { Crew, Tourism } from '../Types'
 
 const Crew: React.FC = () => {
+  const [ crewValues, setCrewValues ] = useState<Crew[]>([])
+  // const [ selectedIndex, setSelectedIndex ] useState(0);
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then(resource => {
+        if(!resource.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        return resource.json();
+      })
+      .then((data: Tourism) => setCrewValues(data.crew))
+      .catch(error => console.log(error.message));
+  }, [])
+
+  // const selectedCrew = crew[selectedIndex]
   return (
-    <div>
-      <h3>MEET YOUR CREW</h3>
-      <div>
-        <div style={{
-          display: "flex",
-          height: "426px"
-        }}>
-          <h4>FLIGHT ENGINEER <span>ANOUSHEH ANSARI</span></h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga corporis labore ut dicta esse minus optio ratione voluptates eaque similique.</p>
-        </div>
-          <img src="" alt="engineer" />
-      </div>
+    <div className='crew'>
+      { crewValues.map((value, index) => (
+        <li key={index}>
+          <p> { value.name } </p>
+        </li>
+      ))}
     </div>
   )
 }
