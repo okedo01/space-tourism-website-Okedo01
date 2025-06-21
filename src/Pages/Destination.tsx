@@ -23,27 +23,30 @@ const Destination: React.FC = () => {
   return (
     <div className="destination">
       <section className="img">
-        <h2><span>02</span>PICK YOUR DESTINATION</h2>
+        <h1><span>02</span>PICK YOUR DESTINATION</h1>
         { selectedPlanet && (
           <img src={selectedPlanet.images.png} alt="" />
         )}
       </section>
-      <ul>
-        { planets.map((planet, index) => (
-          <button key={index} onClick={() => setSelectedIndex(index)}>
-            { planet.name }
-          </button>
-        ))}
-      </ul>
-      { selectedPlanet && (
-        <section className="planet-details">
-          <article>
-            <p>{selectedPlanet.description}</p>
-            <span>{selectedPlanet.distance}</span>
-            <span>{selectedPlanet.travel}</span>
-          </article>
-        </section>
-      )}
+      <main>
+        <ul>
+          { planets.map((planet, index) => (
+            <button key={index} onClick={() => setSelectedIndex(index)}>
+              { planet.name }
+            </button>
+          ))}
+        </ul>
+        { selectedPlanet && (
+          <section className="planet-details">
+            <article>
+              <h2> { selectedPlanet.name } </h2>
+              <p>{selectedPlanet.description}</p>
+              <span>{selectedPlanet.distance}</span>
+              <span>{selectedPlanet.travel}</span>
+            </article>
+          </section>
+        )}
+      </main>
     </div>
   )
 }
