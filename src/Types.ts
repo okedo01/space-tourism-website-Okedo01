@@ -1,6 +1,6 @@
 export interface Tourism {
     destinations: DestinationData[]
-    crew: Crew[]
+    crew: CrewData[]
     technology: Technology[]
 }
 
@@ -17,7 +17,7 @@ export interface Images {
     webp: string
 }
 
-export interface Crew {
+export interface CrewData {
     name: string
     images: Images
     role: string
