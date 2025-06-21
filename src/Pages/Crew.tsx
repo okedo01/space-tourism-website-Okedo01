@@ -21,23 +21,25 @@ const Crew: React.FC = () => {
   const selectedCrew = crewValues[selectedIndex];
 
   return (
-    <div className='crew'>
-      <h1><span>01</span>MEET YOUR CREW</h1>
-      { selectedCrew && (
-        <main>
-          <article>
-            <span>{ selectedCrew.role }</span>
-            <h2>{ selectedCrew.name }</h2>
-            <p>{ selectedCrew.bio }</p>
-          </article>
-          <img src={selectedCrew.images.png} alt="crew-img" />
-        </main>
-      )}
-      { crewValues.map((value, index) => (
-        <button key={index} onClick={() => setSelectedIndex(index)}>
-          { value.name }
-        </button>
-      ))}
+    <div className="crew">
+      <div>
+        <h1><span>01</span>MEET YOUR CREW</h1>
+        { selectedCrew && (
+          <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>
+            <article>
+              <span>{ selectedCrew.role }</span>
+              <h2>{ selectedCrew.name }</h2>
+              <p>{ selectedCrew.bio }</p>
+            </article>
+            <img src={selectedCrew.images.png} alt="crew-img" style={{width: "20%"}}/>
+          </main>
+        )}
+        { crewValues.map((value, index) => (
+          <button key={index} onClick={() => setSelectedIndex(index)} style={{background: selectedIndex === index? "white" : "black"}}>
+            { value.empty }
+          </button>
+        ))}
+      </div>
     </div>
   )
 }

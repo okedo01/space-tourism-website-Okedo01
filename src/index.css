@@ -195,6 +195,7 @@ button:hover {
   background-image: url(/public/assets/crew/background-crew-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: red;
 }
 .crew .selected-crew {
   background-color: black;
@@ -202,6 +203,12 @@ button:hover {
   height: 15px;
   border: none;
   border-radius: 50%;
+}
+.crew button {
+  border: none;
+  border-radius: 50%;
+  /* display: flex; */
+  justify-content: space-between;
 }
 
 @media (prefers-color-scheme: light) {
