@@ -30,9 +30,9 @@ const Crew: React.FC = () => {
           <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>
             
             <article>
-              <span style={{textTransform: "uppercase"}}>{ selectedCrew.role }</span>
-              <h2 style={{color: "white", fontSize: "36px", textTransform: "uppercase"}}>{ selectedCrew.name }</h2>
-              <p>{ selectedCrew.bio }</p>
+              <span style={{textTransform: "uppercase", color: "#9a9a9a", fontSize: "20px"}}>{ selectedCrew.role }</span>
+              <h2 style={{color: "white", fontSize: "31px", textTransform: "uppercase"}}>{ selectedCrew.name }</h2>
+              <p style={{color: "#9a9a9a", fontSize: "14px"}}>{ selectedCrew.bio }</p>
             </article>
             <img src={selectedCrew.images.png} alt="crew-img" style={{width: "30%"}}/>
           </main>

@@ -213,13 +213,11 @@ button:hover {
 .crew .crew-details {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  justify-content: center;
-  align-items: start;
   margin-top: 50px;
   padding-left: 10px;
 }
 .crew .crew-details article {
-  padding-right: 20em;  
+  padding-right: 14.3em;  
 }
 .crew button {
   background-color: transparent;
