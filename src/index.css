@@ -192,9 +192,29 @@ button:hover {
 .crew {
   width: 1280px;
   height: 100vh;
+  padding: 1em 5em;
   background-image: url(/public/assets/crew/background-crew-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+.crew h1 {
+  position: absolute;
+  top: 6em;
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+}
+.crew span {
+  margin-right: 15px;
+  color: gray;
+  font-weight: 900;
+}
+.crew .crew-details {
+  background-color: red;
+}
+.crew .crew-details {
+  display: flex;
+  flex-direction: column;
 }
 .crew button {
   background-color: transparent;
