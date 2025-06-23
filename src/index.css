@@ -227,6 +227,12 @@ button:hover {
   border-color: transparent;
 }
 
+.technology {
+  width: 1280px;
+  height: 100vh;
+  background-image: url(/public/assets/technology/background-technology-desktop.jpg);
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;

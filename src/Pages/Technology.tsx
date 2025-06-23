@@ -20,7 +20,14 @@ const Technology: React.FC = () => {
     const selectedTechnology = technology[selectedIndex]
 
   return (
-    <div>Technology</div>
+    <div className="technology">
+      <h1 style={{paddingTop: "7em", fontSize: "20px"}}><span>03</span>SPACE LAUNCH 101</h1>
+      <main>
+        <section className="circle"></section>
+        <section className="contents"></section>
+        <section className="images"></section>
+      </main>
+    </div>
   )
 }
 
