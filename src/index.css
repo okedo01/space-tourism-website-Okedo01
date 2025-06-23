@@ -249,7 +249,7 @@ button:hover {
   margin: 20px;
   padding: 5px;
   font-size: 22px;
-  border: none;
+  border: 1px solid gray;
   border-radius: 50%;
 }
 .technology button:hover {
