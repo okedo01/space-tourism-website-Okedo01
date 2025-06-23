@@ -38,7 +38,7 @@ const Technology: React.FC = () => {
           { selectedTechnology && (
             <div style={{}}>
               <h2 style={{textTransform: "uppercase", color: "white", fontSize: "46px"}}>{ selectedTechnology.name}</h2>
-              <p style={{marginRight: "187px", paddingTop: "20px", color: "gray", fontSize: "14px"}}>{ selectedTechnology.description}</p>
+              <p style={{marginRight: "185px", paddingTop: "20px", color: "gray", fontSize: "14px"}}>{ selectedTechnology.description}</p>
             </div>
           )}
         </section>
