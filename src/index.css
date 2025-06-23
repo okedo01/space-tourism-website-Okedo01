@@ -200,24 +200,30 @@ button:hover {
 .crew h1 {
   position: absolute;
   top: 6em;
+  padding-left: 10px;
   font-size: 20px;
   color: white;
   font-weight: 100;
 }
-.crew span {
+.crew h1 span {
   margin-right: 15px;
   color: gray;
   font-weight: 900;
 }
 .crew .crew-details {
-  background-color: red;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: start;
+  margin-top: 50px;
+  padding-left: 10px;
 }
-.crew .crew-details {
-  display: flex;
-  flex-direction: column;
+.crew .crew-details article {
+  padding-right: 20em;  
 }
 .crew button {
   background-color: transparent;
+  padding: 5px;
 }
 .crew button:hover {
   border-color: transparent;
