@@ -236,6 +236,14 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 0 30px;
+}
+.technology .circle button {
+  background-color: transparent;
+  padding: 10px;
+}
+.technology button:hover {
+  border-color: transparent;
 }
 
 @media (prefers-color-scheme: light) {

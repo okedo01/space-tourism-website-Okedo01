@@ -27,7 +27,7 @@ const Technology: React.FC = () => {
       <main className="wrapper">
         <section className="circle">
           { technology.map((value, index) => (
-            <button onClick={() => setSelectedIndex(index)}>
+            <button onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index ? "white" : "gray", background: "transparent"}}>
               <FontAwesomeIcon icon={faCircle} />
             </button>
           ))} 
