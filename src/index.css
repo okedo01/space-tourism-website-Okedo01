@@ -232,6 +232,11 @@ button:hover {
   height: 100vh;
   background-image: url(/public/assets/technology/background-technology-desktop.jpg);
 }
+.technology .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
