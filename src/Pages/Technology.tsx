@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import type { TechnologyData, Tourism } from '../Types'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Technology: React.FC = () => {
     const [ technology, setTechnology ] = useState<TechnologyData[]>([]);
@@ -27,8 +25,11 @@ const Technology: React.FC = () => {
       <main className="wrapper">
         <section className="circle">
           { technology.map((value, index) => (
-            <button onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index ? "white" : "gray", background: "transparent"}}>
-              <FontAwesomeIcon icon={faCircle} />
+            <button onClick={() => setSelectedIndex(index)} style={{
+              backgroundColor: selectedIndex === index ? "white" : "gray",
+              color: selectedIndex === index ? "black" : "white"
+              }}>
+              {index + 1}
             </button>
           ))} 
         </section>
