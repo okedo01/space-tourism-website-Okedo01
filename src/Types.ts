@@ -22,7 +22,6 @@ export interface CrewData {
     images: Images
     role: string
     bio: string
-    empty: string
 }
 
 export interface Technology {
