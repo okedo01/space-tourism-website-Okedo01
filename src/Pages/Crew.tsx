@@ -14,7 +14,6 @@ const Crew: React.FC = () => {
         return resource.json();
       })
       .then((data: Tourism) => setCrewValues(data.crew))
-      // .then(data => console.log(data.crew))
       .catch(error => console.log(error.message));
   }, [])
 
