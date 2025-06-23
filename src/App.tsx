@@ -3,9 +3,9 @@ import './App.css'
 import Navbar from './Components/Navbar'
 import Home from './Pages/Home'
 import Crew from './Pages/Crew'
-import Technology from './Pages/Technology'
 import NotFound from './Components/NotFound'
 import Destination from './Pages/Destination'
+import Technology from './Pages/Technology'
 
 function App() {
 

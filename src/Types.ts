@@ -1,7 +1,7 @@
 export interface Tourism {
     destinations: DestinationData[]
     crew: CrewData[]
-    technology: Technology[]
+    technology: TechnologyData[]
 }
 
 export interface DestinationData {
@@ -24,7 +24,7 @@ export interface CrewData {
     bio: string
 }
 
-export interface Technology {
+export interface TechnologyData {
     name: string
     images: TechImages
     description: string
