@@ -237,10 +237,20 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 0 30px;
+  margin-left: 80px;
+}
+.technology .contents {
+  margin: auto 50px;
+  padding: 0 20px;
 }
 .technology .circle button {
-  background-color: transparent;
-  padding: 10px;
+  width: 90%;
+  height: 60px;
+  margin: 20px;
+  padding: 5px;
+  font-size: 22px;
+  border: none;
+  border-radius: 50%;
 }
 .technology button:hover {
   border-color: transparent;
