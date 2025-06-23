@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import type { CrewData, Tourism } from '../Types'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCircle } from '@fortawesome/free-solid-svg-icons';
 
 const Crew: React.FC = () => {
   const [ crewValues, setCrewValues ] = useState<CrewData[]>([])
@@ -35,7 +37,9 @@ const Crew: React.FC = () => {
         )}
         { crewValues.map((value, index) => (
           <button key={index} onClick={() => setSelectedIndex(index)} style={{background: selectedIndex === index? "white" : "black"}}>
-            { value.empty }
+            {/* { value.empty } */}
+            {/* <FontAwesomeIcon icon={faCircle} /> */}
+            <FontAwesomeIcon icon={faCircle} size="2x" color="red" />
           </button>
         ))}
       </div>
