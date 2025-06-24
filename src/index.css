@@ -206,7 +206,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.crew h1 {
+.crew header {
   position: absolute;
   top: 6em;
   padding-left: 10px;
@@ -214,13 +214,10 @@ body {
   color: white;
   font-weight: 100;
 }
-.crew h1 span {
+.crew header span {
   margin-right: 15px;
   color: gray;
   font-weight: 900;
-}
-.crew .crew-details {
-  padding-left: 0;
 }
 .crew .crew-details .contents {
   padding-right: 14.3em;  
@@ -309,7 +306,7 @@ body {
     width: 100vw;
     padding: 1em 2em;
   }
-  .crew h1 {
+  .crew header {
   top: 5em;
 }
 }
@@ -355,5 +352,24 @@ body {
   }
   .crew {
     background-image: url(/public/assets/crew/background-crew-tablet.jpg);
+  }
+  .crew {
+    background-image: url(/public/assets/crew/background-crew-desktop.jpg);
+  }
+  .crew .crew-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .crew .crew-details header {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    position: static;
+  }
+  .crew .crew-details .wrapper {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .crew .crew-details .btn {
+    background-color: red;
   }
 }

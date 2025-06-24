@@ -25,7 +25,7 @@ const Crew: React.FC = () => {
     <div className="crew">
 
       <main className='crew-details'>
-        <h1><span>02</span>MEET YOUR CREW</h1>
+        <header><span>02</span>MEET YOUR CREW</header>
         <section className="wrapper">
           { selectedCrew && (
           <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>   
