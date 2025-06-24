@@ -21,7 +21,7 @@ const Destination: React.FC = () => {
 
   return (
     <div className="destination">
-      <section className="img">
+      <section className="img-wrapper">
         <h1><span>01</span>PICK YOUR DESTINATION</h1>
         { selectedPlanet && (
           <img src={selectedPlanet.images.png} alt="" />
