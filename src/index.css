@@ -100,6 +100,14 @@ body {
   text-align: start;
   color: rgb(235, 229, 229);
 }
+.home .space h3 span {
+  display: block;
+  font-size: 100px;
+}
+.home .space p {
+  padding-right: 2em;
+  font-size: 14px;
+}
 .home .explore {
   display: flex;
   justify-content: center;
@@ -256,28 +264,28 @@ body {
   border-color: transparent;
 }
 
-@media screen and (max-width: 1024px) {
-  /* .home .space {
-    margin-right: 15em;
-    margin-left: 10px;
-    padding: 0 20px;
-    background-color: green;
+@media screen and (max-width: 945px) {
+  .home {
+    padding-top: 120px;
   }
-  .home .explore {
+  .home main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 9em;
-    height: 9em;
-    background: white;
-    font-size: 24px;
-    font-weight: bolder;
-    border-radius: 50%;
+  }
+  .home .space {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 20px;
     text-align: center;
   }
-  .home .explore a {
-    color: gray;
-  } */
+  .home .space h3 span {
+    font-size: 60px;
+  }
+  .home .space p {
+    padding: 0 20px;
+  }
 }
 @media screen and(max-width: 375px) {
   .home {
