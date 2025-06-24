@@ -25,20 +25,20 @@ const Crew: React.FC = () => {
     <div className="crew">
       <h1><span>01</span>MEET YOUR CREW</h1>
 
-      <div className='crew-details'>
+      <main className='crew-details'>
         { selectedCrew && (
           <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>
             
-            <article>
-              <span style={{textTransform: "uppercase", color: "#9a9a9a", fontSize: "20px"}}>{ selectedCrew.role }</span>
-              <h2 style={{color: "white", fontSize: "31px", textTransform: "uppercase"}}>{ selectedCrew.name }</h2>
-              <p style={{color: "#9a9a9a", fontSize: "14px"}}>{ selectedCrew.bio }</p>
+            <article className="contents">
+              <span>{ selectedCrew.role }</span>
+              <h2>{ selectedCrew.name }</h2>
+              <p>{ selectedCrew.bio }</p>
             </article>
             <img src={selectedCrew.images.png} alt="crew-img" style={{width: "30%"}}/>
           </main>
         )}
       
-          </div>
+      </main>
             { crewValues.map((value, index) => (
               <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
                 <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
