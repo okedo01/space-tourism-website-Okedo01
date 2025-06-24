@@ -200,6 +200,7 @@ body {
 .crew {
   width: 1280px;
   height: 100vh;
+  overflow-y: hidden;
   padding: 1em 5em;
   background-image: url(/public/assets/crew/background-crew-desktop.jpg);
   background-repeat: no-repeat;
@@ -240,6 +241,7 @@ body {
 }
 .crew .btn {
   display: flex;
+  margin-bottom: 20em;
 }
 .crew button {
   background-color: transparent;
@@ -308,22 +310,8 @@ body {
     padding: 1em 2em;
   }
   .crew h1 {
-    padding-top: 40px;
-  }
-  .crew .crew-details {
-    grid-template-columns: 5fr 1fr;
-    margin-top: 70px;
-  }
-  .crew .crew-details .contents {
-    padding-right: 10em;  
-    padding-top: 2em;
-  }
-  .crew .crew-details .contents h2 {
-    font-size: 28px;
-  }
-    .crew .crew-details .contents p {
-    padding-top: 12px;
-  }
+  top: 5em;
+}
 }
 
 @media screen and (max-width: 945px) {

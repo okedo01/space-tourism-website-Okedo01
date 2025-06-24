@@ -38,7 +38,7 @@ const Crew: React.FC = () => {
           </main>
         )}
         </section>
-        <section className='btn'>
+        <section className="btn">
           { crewValues.map((value, index) => (
           <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
             <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
