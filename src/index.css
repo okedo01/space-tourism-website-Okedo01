@@ -182,8 +182,8 @@ body {
   display: flex;
   justify-content: space-between;
   border-top: 1px solid gray;
-  margin-top: 20px;
-  padding-top: 10px;
+  margin-top: 40px;
+  padding-top: 30px;
 }
 .destination .planet-details .info p {
   display: flex;
@@ -290,9 +290,7 @@ body {
   .destination {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* justify-content: center;
-    align-items: center; */
-    width: 100%;
+    width: 100vw;
     padding-top: 0;
     padding-left: 0;
   }
@@ -300,46 +298,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin-top: 75px; */
-    /* background-color: red; */
-  }
-  .destination h1 {
-    font-size: 20px;
-    color: white;
-    font-weight: 100;
-  }
-  .destination span {
-    margin-right: 15px;
-    color: gray;
-    font-weight: 900;
+    margin-top: 90px;
   }
   .destination main {
-    margin: auto 10px;
-  }
-  .destination ul button {
-    border: none;
-    background-color: transparent;
-    color: white;
-  }
-    button:active {
-      border-bottom: 1px solid white;
-    }
-  .destination .planet-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-    width: 100%;
-  }
-  .destination .planet-details article {
+    margin: 0;
     padding: 10px;
-  }
-  .destination .planet-details article h2{
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 52px;
   }
   .destination .planet-details .info {
     display: flex;
@@ -347,16 +310,5 @@ body {
     border-top: 1px solid gray;
     margin-top: 20px;
     padding-top: 10px;
-  }
-  .destination .planet-details .info p {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    font-size: 10px;
-    color: gray;
-  }
-  .destination .planet-details .info span{
-    font-size: 24px;
   }
 }
