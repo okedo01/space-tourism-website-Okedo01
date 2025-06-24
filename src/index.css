@@ -219,10 +219,7 @@ body {
   font-weight: 900;
 }
 .crew .crew-details {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  margin-top: 50px;
-  padding-left: 10px;
+  padding-left: 0;
 }
 .crew .crew-details .contents {
   padding-right: 14.3em;  
@@ -240,6 +237,9 @@ body {
 .crew .crew-details .contents p {
   font-size: 14px;
   color: #9a9a9a;
+}
+.crew .btn {
+  display: flex;
 }
 .crew button {
   background-color: transparent;
@@ -319,7 +319,7 @@ body {
     padding-top: 2em;
   }
   .crew .crew-details .contents h2 {
-  font-size: 28px;
+    font-size: 28px;
   }
     .crew .crew-details .contents p {
     padding-top: 12px;
@@ -364,5 +364,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .crew {
+    background-image: url(/public/assets/crew/background-crew-tablet.jpg);
   }
 }

@@ -23,28 +23,29 @@ const Crew: React.FC = () => {
 
   return (
     <div className="crew">
-      <h1><span>01</span>MEET YOUR CREW</h1>
 
       <main className='crew-details'>
-        { selectedCrew && (
-          <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>
-            
+        <h1><span>02</span>MEET YOUR CREW</h1>
+        <section className="wrapper">
+          { selectedCrew && (
+          <main style={{display: "flex", justifyContent: "center", alignItems: "center", marginTop: "5em"}}>   
             <article className="contents">
               <span>{ selectedCrew.role }</span>
               <h2>{ selectedCrew.name }</h2>
               <p>{ selectedCrew.bio }</p>
             </article>
-            <img src={selectedCrew.images.png} alt="crew-img" style={{width: "30%"}}/>
+            <img src={selectedCrew.images.png} alt="crew-img" style={{width: "28%"}}/>
           </main>
         )}
-      
+        </section>
+        <section className='btn'>
+          { crewValues.map((value, index) => (
+          <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
+            <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
+          </button>
+        ))}
+        </section>
       </main>
-            { crewValues.map((value, index) => (
-              <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
-                <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
-              </button>
-            ))}
-      
     </div>
   )
 }
