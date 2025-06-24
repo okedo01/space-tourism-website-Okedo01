@@ -264,29 +264,7 @@ body {
   border-color: transparent;
 }
 
-@media screen and (max-width: 945px) {
-  .home {
-    padding-top: 120px;
-  }
-  .home main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .home .space {
-    margin-right: 0;
-    margin-left: 0;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-  .home .space h3 span {
-    font-size: 60px;
-  }
-  .home .space p {
-    padding: 0 20px;
-  }
-
+@media screen and (max-width: 12024px) {
   .destination {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -310,5 +288,33 @@ body {
     border-top: 1px solid gray;
     margin-top: 20px;
     padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .home {
+    padding-top: 120px;
+    background-image: url(/public/assets/home/background-home-tablet.jpg);
+  }
+  .home main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .home .space {
+    margin-right: 0;
+    margin-left: 0;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .home .space h3 span {
+    font-size: 60px;
+  }
+  .home .space p {
+    padding: 0 20px;
+  }
+  .destination {
+    background-image: url(/public/assets/destination/background-destination-tablet.jpg);
   }
 }
