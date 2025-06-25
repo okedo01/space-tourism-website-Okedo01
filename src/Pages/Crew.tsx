@@ -6,7 +6,8 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 const Crew: React.FC = () => {
   const [ crewValues, setCrewValues ] = useState<CrewData[]>([])
   const [ selectedIndex, setSelectedIndex ] = useState(0);
-  const [ isLoading, setIsLoading ] = useState(true);
+  const [ isLoading, setIsLoading ] = useState<boolean>(true);
+  const [ error, setError ] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/data.json")
@@ -16,14 +17,31 @@ const Crew: React.FC = () => {
         }
         return resource.json();
       })
-      .then((data: Tourism) => setCrewValues(data.crew))
-      .catch(error => console.log(error.message));
+      .then((data: Tourism) => {
+        setTimeout(() => {
+          setCrewValues(data.crew);
+          setIsLoading(false);
+        }, 1000);
+      })
+      .catch(error => {
+        setError(error.message);
+        setIsLoading(false);
+      });
   }, [])
+
+  if (isLoading) return (
+    <div className="loading-screen">
+      <div className="spinner" />
+      <p>Loading...</p>
+    </div>
+  );
+  if(!crewValues.length) return null;
 
   const selectedCrew = crewValues[selectedIndex];
 
   return (
     <div className="crew">
+         
       <header><span>02</span>MEET YOUR CREW</header>
       
       <main className="container">
