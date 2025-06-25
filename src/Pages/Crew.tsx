@@ -41,11 +41,12 @@ const Crew: React.FC = () => {
 
   return (
     <div className="crew">
-         
-      <header><span>02</span>MEET YOUR CREW</header>
       
       <main className="container">
 
+        <header>
+          <h1><span>02</span>MEET YOUR CREW</h1>
+        </header>
           <div className="crew-img">
             <img src={selectedCrew.images.png} alt="crew-img" />
           </div>

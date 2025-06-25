@@ -28,19 +28,15 @@ h1 {
 }
 
 button {
-  border-radius: 3px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.5em;
   font-size: 1em;
   font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
+  border: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: white;
+} 
 
 body {
   display: grid;
@@ -154,13 +150,12 @@ body {
   margin: auto 10em;
 }
 .destination ul button {
-  border: none;
-  background-color: transparent;
-  color: white;
+  border-radius: 3px;
+  padding: 0.6em 1.5em;
 }
-  button:active {
-    border-bottom: 1px solid white;
-  }
+button:active {
+  border-bottom: 1px solid white;
+}
 .destination .planet-details{
   display: flex;
   flex-direction: column;
@@ -213,28 +208,59 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "header header header"
+                       "wrapper . crew-img"
+                       "btn btn btn";
+  justify-content: center;
+  align-items: center;
   height: 100%;
+}
+.crew header {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: red;
+}
+.crew header h1 {
+  font-size: 20px;
+  color: white;
+}
+.crew header h1 span {
+  padding-right: 12px;
+  font-size: 20px;
+  color: gray;
 }
 .crew .crew-img {
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
 }
 .crew .crew-img img {
-  width: 50%;
+  width: 80%;
 }
 .crew .btn {
   grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-end: 2;
   grid-row-start: 3;
   grid-row-end: 4;
+  position: absolute;
+  top: 30rem;
+  left: 5rem;
+}
+.crew .btn button {
+  padding: 5px;
+  background-color: transparent;
 }
 .crew .wrapper {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
+  margin: 5em 60px;
+  padding-right: 17.8rem;
+  text-align: start;
 }
 
 .spinner {
