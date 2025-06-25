@@ -320,6 +320,7 @@ button:active {
   padding-right: 15px;
 }
 .technology .wrapper {
+  height: 75vh;
   display: grid;
   grid-template-columns: 15% 50% 35%;
   justify-content: center;
@@ -332,7 +333,7 @@ button:active {
 }
 .technology .wrapper button {
   width: 30%;
-  height: 55px;
+  height: 50px;
   margin: 20px 0;
   padding: 5px;
   font-size: 22px;
@@ -354,6 +355,20 @@ button:active {
   font-size: 14px;
   color: #adacac;
 }
+ .technology .images {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.technology .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
+
 
 @media screen and (max-width: 1200px) {
   .destination {

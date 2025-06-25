@@ -44,7 +44,7 @@ const Technology: React.FC = () => {
         </section>
         <section className="images">
           { selectedTechnology && (
-            <img src={selectedTechnology.images.landscape} alt="technology-image" style={{width: "400px", height: "370px"}}/>
+            <img src={selectedTechnology.images.landscape} alt="technology-image" />
           )}
         </section>
       </main>
