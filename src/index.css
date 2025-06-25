@@ -329,6 +329,8 @@ button:active {
 .technology .wrapper .circle {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .technology .wrapper button {
   width: 30%;
@@ -486,25 +488,44 @@ button:active {
     height: 100%;
     background-image: url(/public/assets/technology/background-technology-tablet.jpg);
   }
-  .technology .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5rem;
-    height: 100%;
+ .technology h1 {
+    margin-left: 0;
+    text-align: center;
   }
-   /* .technology .images {
+  .technology .wrapper {
+    grid-template-columns: 1fr;
+     margin-left: 0;
+     padding-bottom: 3rem;
+  }
+  .technology .wrapper .circle {
+    flex-direction: row;
+  }
+  .technology .wrapper button {
+    width: 8%;
+    height: 50px;
+    margin: 20px 50px;
+  }
+  .technology .images {
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-  } */
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
   .technology .images img {
     width: 80%;
-    /* height: 70%; */
     margin: 20px auto;
-    object-fit: cover; 
+  }
+  .technology .wrapper p {
+    text-align: center;
+  }
+  .technology .wrapper .contents h2 {
+    text-align: center;
+  }
+  .wrapper .contents .selected p {
+    margin-right: 0;
+    padding-top: 10px;
+    font-size: 16px;
+    text-align: center;
   }
 }
