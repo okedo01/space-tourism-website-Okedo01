@@ -200,7 +200,7 @@ body {
 .crew {
   width: 100vw;
   padding: 2rem;
-  min-height: 100vh;
+  height: 100vh;
   text-align: center;
   color: white;
   background-image: url(/public/assets/crew/background-crew-desktop.jpg);
@@ -211,25 +211,28 @@ body {
 }
 .crew .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  height: 100%;
 }
 .crew .crew-img {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
-  width: 30%;
+}
+.crew .crew-img img {
+  width: 50%;
 }
 .crew .btn {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 3;
   grid-row-end: 4;
 }
 .crew .wrapper {
   grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
