@@ -408,6 +408,7 @@ button:active {
   }
   .crew {
     /* height: 100vh; */
+    width: 100%;
     background-image: url(/public/assets/crew/background-crew-tablet.jpg);
   }
   .crew .container {
@@ -428,20 +429,24 @@ button:active {
     justify-content: center;
     margin-top: 2em;
   }
-  /* .crew .crew-img img {
-    width: 30%;
-  } */
+  .crew .crew-img img {
+    width: 70%;
+  }
   .crew .btn {
     grid-column: auto;
     grid-row: auto;
     position: static;
-
+    margin-top: 20px;
+  }
+  .crew .btn button {
+    padding: 20px;
   }
   .crew .wrapper {
     grid-column: auto;
     grid-row: auto;
-    margin: 5em 60px;
-    padding-right: 5.2rem;
-    text-align: start;
+    margin: 30px 60px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    text-align: center;
   }
 }
