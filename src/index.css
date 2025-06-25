@@ -206,21 +206,20 @@ button:active {
 }
 .crew .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "header header header"
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-areas: "header header header"
                        "wrapper . crew-img"
-                       "btn btn btn";
+                       "btn btn btn"; */
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 .crew header {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
   grid-row-start: 1;
-  grid-row-end: 4;
-  background-color: red;
+  grid-row-end: 2;
 }
 .crew header h1 {
   font-size: 20px;
@@ -232,19 +231,19 @@ button:active {
   color: gray;
 }
 .crew .crew-img {
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
   grid-row-start: 1;
-  grid-row-end: 4;
+  grid-row-end: 5;
 }
 .crew .crew-img img {
-  width: 80%;
+  width: 60%;
 }
 .crew .btn {
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 5;
   position: absolute;
   top: 30rem;
   left: 5rem;
@@ -255,9 +254,9 @@ button:active {
 }
 .crew .wrapper {
   grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
   margin: 5em 60px;
   padding-right: 17.8rem;
   text-align: start;
