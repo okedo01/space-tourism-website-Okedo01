@@ -4,6 +4,8 @@ import type { TechnologyData, Tourism } from '../Types'
 const Technology: React.FC = () => {
     const [ technology, setTechnology ] = useState<TechnologyData[]>([]);
     const [ selectedIndex, setSelectedIndex ] = useState(0);
+    const [ isLoading, setIsLoading ] = useState<boolean>(false);
+    const [ error, setError ] = useState<undefined | null>(null);
 
     useEffect(() => {
         fetch("data.json")
@@ -13,9 +15,25 @@ const Technology: React.FC = () => {
                 }
                 return resource.json();
             })
-            .then((data: Tourism) => setTechnology(data.technology))
-            .catch(error => console.log(error.message))
+            .then((data: Tourism) => {
+              setIsLoading(false);
+              setTechnology(data.technology);
+            })
+            .catch(error => {
+              setIsLoading(false);
+              setError(error.message)
+            })
     }, []);
+
+    if(!technology.length) return null;
+
+    if(isLoading) return (
+      <div className="loading-screen">
+        <div className="spinner">
+          <p>Loading...</p>
+        </div>
+      </div>
+    )
 
     const selectedTechnology = technology[selectedIndex]
 
