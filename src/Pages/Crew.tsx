@@ -45,8 +45,10 @@ const Crew: React.FC = () => {
       <header><span>02</span>MEET YOUR CREW</header>
       
       <main className="container">
-        <section className='crew-details'>
-          <img src={selectedCrew.images.png} alt="crew-img" style={{width: "28%"}}/>
+
+          <div className="crew-img">
+            <img src={selectedCrew.images.png} alt="crew-img" />
+          </div>
           <section className="btn">
             { crewValues.map((value, index) => (
             <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
@@ -63,7 +65,7 @@ const Crew: React.FC = () => {
               </article>
           )}
           </section>
-        </section>
+        
       </main>
     </div>
   )
