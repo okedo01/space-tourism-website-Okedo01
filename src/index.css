@@ -302,7 +302,7 @@ button:active {
   height: 100vh;
 }
 
-.technology {
+/* .technology {
   width: 1280px;
   height: 100vh;
   background-image: url(/public/assets/technology/background-technology-desktop.jpg);
@@ -332,6 +332,21 @@ button:active {
 }
 .technology button:hover {
   border-color: transparent;
+} */
+
+.technology {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/public/assets/technology/background-technology-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.technology .wrapper {
+  display: grid;
+  grid-template-columns: 15% 50% 35%;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1200px) {
