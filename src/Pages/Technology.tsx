@@ -21,7 +21,7 @@ const Technology: React.FC = () => {
 
   return (
     <div className="technology">
-      <h1 style={{marginLeft: "100px", paddingTop: "6em", fontSize: "20px", color: "white"}}><span style={{paddingRight: "15px"}}>03</span>SPACE LAUNCH 101</h1>
+      <h1><span>03</span>SPACE LAUNCH 101</h1>
       <main className="wrapper">
         <section className="circle">
           { technology.map((value, index) => (
@@ -34,11 +34,11 @@ const Technology: React.FC = () => {
           ))} 
         </section>
         <section className="contents">
-          <p style={{fontSize: "11px", color: "gray"}}>THE TERMINOLOGY...</p>
+          <p>THE TERMINOLOGY...</p>
           { selectedTechnology && (
-            <div style={{}}>
-              <h2 style={{textTransform: "uppercase", color: "white", fontSize: "46px"}}>{ selectedTechnology.name}</h2>
-              <p style={{marginRight: "185px", paddingTop: "20px", color: "gray", fontSize: "14px"}}>{ selectedTechnology.description}</p>
+            <div className="selected">
+              <h2>{ selectedTechnology.name}</h2>
+              <p>{ selectedTechnology.description}</p>
             </div>
           )}
         </section>
