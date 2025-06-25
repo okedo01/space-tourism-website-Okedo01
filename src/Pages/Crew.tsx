@@ -25,6 +25,14 @@ const Crew: React.FC = () => {
     <div className="crew">
 
       <main className='crew-details'>
+        <img src={selectedCrew.images.png} alt="crew-img" style={{width: "28%"}}/>
+        <section className="btn">
+          { crewValues.map((value, index) => (
+          <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
+            <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
+          </button>
+        ))}
+        </section>
         <header><span>02</span>MEET YOUR CREW</header>
         <section className="wrapper">
           { selectedCrew && (
@@ -34,16 +42,8 @@ const Crew: React.FC = () => {
               <h2>{ selectedCrew.name }</h2>
               <p>{ selectedCrew.bio }</p>
             </article>
-            <img src={selectedCrew.images.png} alt="crew-img" style={{width: "28%"}}/>
           </main>
         )}
-        </section>
-        <section className="btn">
-          { crewValues.map((value, index) => (
-          <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
-            <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
-          </button>
-        ))}
         </section>
       </main>
     </div>

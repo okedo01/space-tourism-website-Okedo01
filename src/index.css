@@ -200,15 +200,15 @@ body {
 .crew {
   width: 1280px;
   height: 100vh;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   padding: 1em 5em;
   background-image: url(/public/assets/crew/background-crew-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .crew header {
-  position: absolute;
-  top: 6em;
+  /* position: absolute;
+  top: 6em; */
   padding-left: 10px;
   font-size: 20px;
   color: white;
@@ -353,9 +353,6 @@ body {
   .crew {
     background-image: url(/public/assets/crew/background-crew-tablet.jpg);
   }
-  .crew {
-    background-image: url(/public/assets/crew/background-crew-desktop.jpg);
-  }
   .crew .crew-details {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -369,7 +366,8 @@ body {
     grid-column-start: 2;
     grid-column-end: 3;
   }
-  .crew .crew-details .btn {
-    background-color: red;
-  }
+}
+
+@media screen and (max-width: 645px) {
+  
 }
