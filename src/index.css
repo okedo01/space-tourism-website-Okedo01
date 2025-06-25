@@ -208,9 +208,6 @@ button:active {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  /* grid-template-areas: "header header header"
-                       "wrapper . crew-img"
-                       "btn btn btn"; */
   justify-content: center;
   align-items: center;
   height: 100%;
@@ -235,9 +232,10 @@ button:active {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 5;
+  margin-top: 4em;
 }
 .crew .crew-img img {
-  width: 60%;
+  width: 50%;
 }
 .crew .btn {
   grid-column-start: 1;
@@ -258,8 +256,25 @@ button:active {
   grid-row-start: 2;
   grid-row-end: 4;
   margin: 5em 60px;
-  padding-right: 17.8rem;
+  padding-right: 5.2rem;
   text-align: start;
+}
+.crew .wrapper span {
+  color: gray;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.crew .wrapper h2{
+  padding-bottom: 16px;
+  color: white;
+  font-size: 36px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.crew .wrapper p{
+  color: #bab5b5;
+  font-size: 16px;
 }
 
 .spinner {
