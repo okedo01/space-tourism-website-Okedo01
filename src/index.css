@@ -619,4 +619,16 @@ button:active {
   .destination {
     height: 100vh;
   }
+  .technology, .crew {
+    height: calc(100% + 10px);
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .destination {
+    height: 100vh;
+  }
+  .technology, .crew {
+    height: 100vh;
+  }
 }
