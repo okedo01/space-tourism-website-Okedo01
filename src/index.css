@@ -575,15 +575,15 @@ button:active {
     .nav-links.show {
       display: flex;
     }
+    .destination {
+      height: 100%;
+      background-image: url(/public/assets/destination/background-destination-mobile.jpg);
+    }
   }
 
 @media screen and (max-width: 470px) {
   .home {
     background-image: url(/public/assets/home/background-home-mobile.jpg);
-  }
-  .destination {
-    height: 100%;
-    background-image: url(/public/assets/destination/background-destination-mobile.jpg);
   }
   .destination ul button {
     padding: 0.6em 1em;
