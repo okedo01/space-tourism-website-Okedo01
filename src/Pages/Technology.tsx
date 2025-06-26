@@ -49,7 +49,7 @@ const Technology: React.FC = () => {
       <h1><span>03</span>SPACE LAUNCH 101</h1>
       <main className="wrapper">
         <section className="circle">
-          { technology.map((value, index) => (
+          { technology.map((_, index) => (
             <button onClick={() => setSelectedIndex(index)} style={{
               backgroundColor: selectedIndex === index ? "white" : "transparent",
               color: selectedIndex === index ? "black" : "white"

@@ -54,7 +54,7 @@ const Crew: React.FC = () => {
             <img src={selectedCrew.images.png} alt="crew-img" />
           </div>
           <section className="btn">
-            { crewValues.map((value, index) => (
+            { crewValues.map((_, index) => (
             <button key={index} onClick={() => setSelectedIndex(index)} style={{color: selectedIndex === index? "white" : "gray"}}>
               <FontAwesomeIcon icon={faCircle} style={{width: "70%"}}/>
             </button>
