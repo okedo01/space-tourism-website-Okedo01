@@ -4,6 +4,7 @@ import type { DestinationData, Tourism } from '../Types'
 const Destination: React.FC = () => {
   const [ planets, setPlanets ] = useState<DestinationData[]>([])
   const [ selectedIndex, setSelectedIndex ] = useState(0);
+  const [ isLoading, setIsLoading ] = useState<boolean>(true);
 
   useEffect(() => {
     fetch("/data.json")
@@ -13,8 +14,13 @@ const Destination: React.FC = () => {
         }
         return resouurce.json();
       })
-      .then((data: Tourism) => setPlanets(data.destinations))
-      .catch(error => console.log(error.message));
+      .then((data: Tourism) => {
+        setIsLoading(false);
+        setPlanets(data.destinations);
+      })
+      .catch(error => {
+        setIsLoading(false);
+      });
   }, [])
 
   const selectedPlanet = planets[selectedIndex];

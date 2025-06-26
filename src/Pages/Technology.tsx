@@ -5,13 +5,15 @@ const Technology: React.FC = () => {
     const [ technology, setTechnology ] = useState<TechnologyData[]>([]);
     const [ selectedIndex, setSelectedIndex ] = useState(0);
     const [ isLoading, setIsLoading ] = useState<boolean>(false);
-    const [ error, setError ] = useState<undefined | null>(null);
+    const [ error, setError ] = useState<string | null>(null);
 
     useEffect(() => {
-        fetch("data.json")
+      setIsLoading(true)
+        setTimeout(() => {
+          fetch("data.json")
             .then(resource => {
                 if(!resource.ok) {
-                    throw new Error("Failed to fetch data");
+                  throw new Error("Failed to fetch data");
                 }
                 return resource.json();
             })
@@ -23,17 +25,23 @@ const Technology: React.FC = () => {
               setIsLoading(false);
               setError(error.message)
             })
+        }, 1000);
     }, []);
 
-    if(!technology.length) return null;
-
-    if(isLoading) return (
-      <div className="loading-screen">
-        <div className="spinner">
-          <p>Loading...</p>
-        </div>
+    if(error) return (
+      <div style={{color: "red"}}>
+        <p>{ error }</p>
       </div>
     )
+   
+     if (isLoading) return (
+    <div className="loading-screen">
+      <div className="spinner" />
+      <p>Loading...</p>
+    </div>
+  );
+
+    if(!technology.length) return null;
 
     const selectedTechnology = technology[selectedIndex]
 
