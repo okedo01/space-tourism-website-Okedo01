@@ -5,6 +5,7 @@ const Destination: React.FC = () => {
   const [ planets, setPlanets ] = useState<DestinationData[]>([])
   const [ selectedIndex, setSelectedIndex ] = useState(0);
   const [ isLoading, setIsLoading ] = useState<boolean>(true);
+  const [ error, setError ] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/data.json")
@@ -20,9 +21,17 @@ const Destination: React.FC = () => {
       })
       .catch(error => {
         setIsLoading(false);
+        setError(error.message);
       });
   }, [])
 
+  if(isLoading) return (
+    <div className="loading-screen">
+      <div className="spinner">
+        <p>Loading...</p>
+      </div>
+    </div>
+  )
   const selectedPlanet = planets[selectedIndex];
 
   return (
