@@ -8,7 +8,9 @@ const Destination: React.FC = () => {
   const [ error, setError ] = useState<string | null>(null);
 
   useEffect(() => {
-    fetch("/data.json")
+    setIsLoading(true);
+    setTimeout(() => {
+      fetch("/data.json")
       .then(resouurce => {
         if(!resouurce.ok) {
           throw new Error("Failed to fetch Data");
@@ -23,15 +25,22 @@ const Destination: React.FC = () => {
         setIsLoading(false);
         setError(error.message);
       });
+    }, 1000);
   }, [])
 
   if(isLoading) return (
     <div className="loading-screen">
-      <div className="spinner">
+      <div className="spinner" />
         <p>Loading...</p>
-      </div>
     </div>
-  )
+  );
+  if(error) return (
+    <div style={{color: "red"}}>
+      <p>{ error }</p>
+    </div>
+  );
+
+  if(!planets) return null;
   const selectedPlanet = planets[selectedIndex];
 
   return (
