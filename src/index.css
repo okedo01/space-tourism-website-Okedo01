@@ -582,12 +582,14 @@ button:active {
     background-image: url(/public/assets/home/background-home-mobile.jpg);
   }
   .destination {
+    height: 100vh;
     background-image: url(/public/assets/destination/background-destination-mobile.jpg);
   }
   .destination ul button {
     padding: 0.6em 1em;
   }
   .crew {
+    height: 100vh;
     background-image: url(/public/assets/crew/background-crew-mobile.jpg);
   }
   .crew header {
@@ -601,6 +603,7 @@ button:active {
     font-size: 25px;
   }
   .technology {
+    height: 100vh;
     background-image: url(/public/assets/technology/background-technology-mobile.jpg);
   }
   .technology .wrapper button {
