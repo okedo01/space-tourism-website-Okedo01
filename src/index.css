@@ -78,6 +78,7 @@ body {
 }
 
 .home {
+  width: 100vw;
   height: 100vh;
   background-image: url(/assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
@@ -346,6 +347,11 @@ button:active {
   object-fit: contain; 
 }
 
+.loading-screen {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
 .spinner {
   width: 40px;
   height: 40px;
@@ -360,12 +366,6 @@ button:active {
   to {
     transform: rotate(360deg);
   }
-}
-
-.loading-screen {
-  display: grid;
-  place-items: center;
-  height: 100vh;
 }
 
 .error {
