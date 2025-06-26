@@ -35,8 +35,12 @@ const Crew: React.FC = () => {
       <p>Loading...</p>
     </div>
   );
+  if(error) return (
+    <div className="error">
+      <p>{ error }</p>
+    </div>
+  )
   if(!crewValues.length) return null;
-
   const selectedCrew = crewValues[selectedIndex];
 
   return (

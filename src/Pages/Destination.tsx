@@ -35,7 +35,7 @@ const Destination: React.FC = () => {
     </div>
   );
   if(error) return (
-    <div style={{color: "red"}}>
+    <div className="error">
       <p>{ error }</p>
     </div>
   );

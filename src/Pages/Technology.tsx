@@ -29,7 +29,7 @@ const Technology: React.FC = () => {
     }, []);
 
     if(error) return (
-      <div style={{color: "red"}}>
+      <div className="error">
         <p>{ error }</p>
       </div>
     )
