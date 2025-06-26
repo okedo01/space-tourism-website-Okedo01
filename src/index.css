@@ -55,24 +55,43 @@ body {
   margin: auto 20px;
   width: 100%;
 }
-.nav-bar .nav-links {
+
+/* Hide menu icon on desktop */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+  z-index: 999;
+}
+.menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Show nav links normally on desktop */
+.nav-links {
   display: flex;
   gap: 0 15px;
   justify-content: space-between;
   padding: 10px 25px;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   transform: translateX(-10%);
 }
+
 .nav-links a {
   color: white;
 }
 .nav-links a:hover {
   color: rgba(249, 249, 249, 0.5);
 }
-.nav-links a h4{
+.nav-links a h4 {
   font-weight: 300;
 }
-.nav-links a h4 span{
+.nav-links a h4 span {
   margin-right: 3px;
   font-weight: 900;
 }
@@ -408,24 +427,6 @@ button:active {
 }
 
 @media screen and (max-width: 945px) {
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: auto;
-  }
-  .nav-bar .nav-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0 15px;
-    justify-content: space-between;
-    padding: 5px 20px;
-    background-color: rgb(255, 255, 255, 0.5);
-    transform: translateX(0);
-  }
   .home {
     padding-top: 120px;
     background-image: url(/public/assets/home/background-home-tablet.jpg);
@@ -555,6 +556,27 @@ button:active {
   }
 }
 
+@media (max-width: 768px) {
+  .menu-icon {
+      display: flex;
+    }
+
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: rgba(0, 0, 0, 0.85);
+      flex-direction: column;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+  }
+
 @media screen and (max-width: 470px) {
   .home {
     background-image: url(/public/assets/home/background-home-mobile.jpg);
@@ -562,21 +584,30 @@ button:active {
   .destination {
     background-image: url(/public/assets/destination/background-destination-mobile.jpg);
   }
+  .destination ul button {
+    padding: 0.6em 1em;
+  }
   .crew {
-     /* padding: 0; */
     background-image: url(/public/assets/crew/background-crew-mobile.jpg);
   }
   .crew header {
-    /* margin-left: 0; */
+    margin-left: 0;
   }
   .crew .wrapper {
-     /* padding-right: 0; */
-    /* margin: 0; */
+    padding-right: 0;
+    margin: 0;
   }
   .crew .wrapper h2 {
     font-size: 25px;
   }
   .technology {
     background-image: url(/public/assets/technology/background-technology-mobile.jpg);
+  }
+  .technology .wrapper button {
+    width: 15%;
+    height: 50px;
+    margin: 20px 10px;
+    padding: 5px;
+    font-size: 22px;
   }
 }
