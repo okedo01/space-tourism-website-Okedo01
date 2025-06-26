@@ -582,7 +582,7 @@ button:active {
     background-image: url(/public/assets/home/background-home-mobile.jpg);
   }
   .destination {
-    height: 100vh;
+    height: 100%;
     background-image: url(/public/assets/destination/background-destination-mobile.jpg);
   }
   .destination ul button {
