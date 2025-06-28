@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+
+live site link: https://space-tourism-website-okedo01.netlify.app/
