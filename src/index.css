@@ -450,6 +450,7 @@ button:active {
     padding: 0 20px;
   }
   .destination {
+    background-color: red;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
