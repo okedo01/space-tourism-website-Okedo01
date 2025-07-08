@@ -1,6 +1,6 @@
 # 🚀 Space Tourism Website
 
-**Live Demo:** [space-tourism-website-okedo01.netlify.app](https://space-tourism-website-okedo01.netlify.app/)
+**Live Site:** [space-tourism-website-okedo01.netlify.app](https://space-tourism-website-okedo01.netlify.app/)
 
 A visually immersive and fully responsive space tourism website inspired by a frontend challenge. Built with modern web technologies to deliver a clean UI, smooth navigation, and a mobile-first experience.
 
