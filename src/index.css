@@ -625,9 +625,6 @@ button:active {
 }
 
 @media screen and (max-width: 414px) {
-  .home {
-    height: 100%;
-  }
   .technology .crew {
     height: 100vh;
   }

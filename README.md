@@ -1,56 +1,47 @@
-# React + TypeScript + Vite
+# 🚀 Space Tourism Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [space-tourism-website-okedo01.netlify.app](https://space-tourism-website-okedo01.netlify.app/)
 
-Currently, two official plugins are available:
+A visually immersive and fully responsive space tourism website inspired by a frontend challenge. Built with modern web technologies to deliver a clean UI, smooth navigation, and a mobile-first experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✅ Users Should Be Able To:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Navigate between pages (Home, Destination, Crew, Technology)
+- View different destinations and crew members dynamically
+- Interact with tabbed interfaces and responsive menus
+- Enjoy a seamless experience on mobile, tablet, and desktop
+- Explore space content with a clean and accessible layout
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## ✨ Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- 🌌 Multi-page layout with themed backgrounds
+- 📱 Fully responsive design for all screen sizes
+- 🔁 Animated tab transitions and navigation
+- 💡 Semantic HTML & accessibility considerations
+- 🎨 Custom layout and typography using Tailwind CSS
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
 
-live site link: https://space-tourism-website-okedo01.netlify.app/
+## 🛠️ Tech Stack
+
+- **React** – Component-based UI
+- **TypeScript** – Type-safe logic and props
+- **Vite** – Lightning-fast development
+- **Tailwind CSS** – Utility-first styling
+- **React Router** – Navigation without reloads
+
+---
+
+## 📷 Screenshots
+
+### 💻 Desktop View
+
+<img src="./assets/screenshot-desktop.png" alt="Desktop Screenshot" width="100%" />
+
+### 📱 Mobile View
+
+<img src="./assets/screenshot-mobile.png" alt="Mobile Screenshot" width="300" />
