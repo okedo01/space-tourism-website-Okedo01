@@ -450,11 +450,10 @@ button:active {
     padding: 0 20px;
   }
   .destination {
-    background-color: red;
+    height: 100%;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-image: url(/public/assets/destination/background-destination-tablet.jpg);
   }
   .destination .img-wrapper img {
@@ -618,7 +617,7 @@ button:active {
 
 @media screen and (max-width: 430px) {
   .destination {
-    height: 100vh;
+    height: 100%;
   }
   .technology, .crew {
     height: calc(100% + 10px);
@@ -626,10 +625,10 @@ button:active {
 }
 
 @media screen and (max-width: 414px) {
-  .destination {
-    height: 100vh;
+  .home {
+    height: 100%;
   }
-  .technolo .crew {
+  .technology .crew {
     height: 100vh;
   }
 }
