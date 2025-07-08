@@ -40,8 +40,8 @@ A visually immersive and fully responsive space tourism website inspired by a fr
 
 ### 💻 Desktop View
 
-<img src="./assets/screenshot-desktop.png" alt="Desktop Screenshot" width="100%" />
+<img src="./public/assets/Desktop.png" alt="Desktop Screenshot" width="100%" />
 
 ### 📱 Mobile View
 
-<img src="./assets/screenshot-mobile.png" alt="Mobile Screenshot" width="300" />
+<img src="./public/assets/Mobile.png" alt="Mobile Screenshot" width="300" />
